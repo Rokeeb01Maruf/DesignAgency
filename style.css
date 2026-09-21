@@ -1,0 +1,510 @@
+:root {
+    --light-green: #D7F5DC;
+    --deep-green: #20B15A;
+    --highlighter: #F8FFF9;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url("/assets/fonts/poppins.ttf");
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("/assets/fonts/montserrat.ttf");
+}
+
+@font-face {
+    font-family: bold;
+    src: url("/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1rem montserrat;
+}
+
+header {
+    padding: 5px 100px;
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+div.logo h1 {
+    font: 1rem bold;
+    user-select: none;
+}
+
+div.logo span {
+    color: #F55F1D;
+}
+
+header a {
+    font-size: .85rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.service {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+nav ul li:nth-child(4) a {
+    border: 2px solid var(--deep-green);
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li:nth-child(4) a:hover {
+    background-color: var(--deep-green);
+    color: white;
+    border-color: transparent;
+}
+
+nav ul li:last-child a {
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: var(--deep-green);
+    border: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+
+}
+
+nav ul li:last-child a:hover {
+    background-color: transparent;
+    border-color: var(--deep-green);
+    color: black;
+}
+
+main section.section {
+    background-color: var(--light-green);
+    padding-block: 20px;
+}
+
+main section.section section:nth-child(1) {
+    display: flex;
+    margin-inline: 100px;
+}
+
+div.first-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+div.first-hero h2 {
+    font: 3.2rem bold;
+    line-height: 1.3;
+}
+
+div.first-hero p {
+    font-weight: bold;
+    margin-block: 10px;
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: poppins;
+}
+
+div.first-hero button {
+    background-color: var(--deep-green);
+    font: 1rem poppins;
+    border: 0;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    padding: 16px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+div.first-hero button:hover {
+    scale: 1.1;
+}
+
+section.scroll {
+    background-color: var(--highlighter);
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+}
+
+main section:nth-child(2).we-do {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-child(2).we-do div:nth-child(1) {
+    padding-inline: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+main section:nth-child(2).we-do div:nth-child(1) p {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--deep-green);
+}
+
+main section:nth-child(2).we-do div:nth-child(1) h4 {
+    font: 1.5rem poppins;
+    font-weight: bolder;
+    width: 400px;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) section {
+    margin-block: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) section img.first-icon {
+    background-color: var(--light-green);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) section h3 {
+    font-weight: bold;
+    margin-block: 8px 12px;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) section p {
+    font-size: .8rem;
+}
+
+main section:nth-child(2).we-do div:nth-child(2) section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 40px;
+    column-gap: 10px;
+    text-transform: capitalize;
+}
+
+main section:nth-child(2).we-do div:nth-child(3) section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid gray;
+    width: 200px;
+}
+
+main section:nth-child(2).we-do div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    background-color: var(--highlighter);
+    padding-block: 50px;
+}
+
+main section:nth-child(2).we-do div:nth-child(3) section.card p {
+    font-size: .9rem;
+    margin-block: 8px 20px;
+}
+
+main section:nth-child(2).we-do div:nth-child(3) section.card h3 {
+    color: var(--deep-green);
+    font-weight: 900;
+    font: 1.8rem bold;
+}
+
+main section:nth-child(3).digital {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 100px;
+    margin-top: 40px;
+}
+
+main section:nth-child(3).digital p.do {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--deep-green);
+    margin-bottom: 20px;
+}
+
+main section:nth-child(3).digital h4{
+    font: 1.5rem poppins;
+    font-weight: bolder;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.digital div.grid{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 50px);
+}
+
+.digital div.grid h3{
+    text-transform: capitalize;
+    margin-block: 15px 10px;
+}
+
+.digital div.grid p{
+    font-size: .8rem;
+}
+
+section.digital div.flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 20px;
+    align-items: end;
+}
+
+section.testimonial{
+    margin-top: 50px;
+}
+
+section.testimonial section.header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 100px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+section.testimonial section.header div:first-child{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+section.testimonial section.header div:first-child h4{
+    color: var(--deep-green);
+    text-transform: uppercase;
+}
+
+section.testimonial section.header div:first-child p{
+    font-weight: 900;
+    font: 1.5rem bold;
+    width: 300px;
+    line-height: 1.2;
+}
+
+section.testimonial section.header div:nth-child(2) img{
+    padding: 20px 25px;
+    border-radius: 50px;
+}
+
+section.testimonial section.header div:nth-child(2) img:nth-child(1){
+    border: 2px solid black;
+}
+
+section.testimonial section.header div:nth-child(2) img:nth-child(2){
+    background-color: var(--light-green);
+    margin-left: 20px;
+}
+
+section.testimonial section.main{
+    margin-left: 100px;
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+
+section.testimonial section.main div.card{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    font-size: 0.8rem;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+div.card div.profile{
+    display: flex;
+    align-items: center;
+}
+
+div.profile div.details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.details h4{
+    font-weight: bold;
+}
+
+section.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.footer h4{
+    margin-block: 40px 20px;
+    color: var(--deep-green);
+    text-transform: uppercase;
+}
+
+section.footer h3{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section.footer p{
+    font: .65rem poppins;
+    text-transform: capitalize;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+section.footer input{
+    border: 1px solid black;
+    outline: 0;
+    font-size: .9rem;
+    padding: 10px 5px;
+    width: 400px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+section.footer input::placeholder{
+    color: gray;
+    text-transform: capitalize;
+}
+
+section.footer label{
+    position: relative;
+}
+
+section.footer button{
+    background-color: orangered;
+    position: absolute;
+    color: white;
+    border: 0;
+    width: 100px;
+    padding-block: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+section.footer button:hover{
+    background-color: orange;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: var(--deep-green);
+    padding-inline: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 50px 20px;
+    font-family: poppins;
+}
+
+footer .header{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .header h2{
+    font: 2rem poppins;
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+footer .header p{
+    font-size: .8rem;
+}
+
+footer .header .socials{
+    display: flex;
+    column-gap: 5px;
+    margin-block: 10px 50px;
+}
+
+footer .header .socials img{
+    box-shadow: 2px 2px 100px var(--light-green);
+    border-radius: 100%;
+}
+
+footer .main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer .main h3{
+    font-size: .9rem;
+}
+
+footer .main ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+footer .main ul li{
+    list-style: none;
+}
+
+footer .main ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+}
+
+footer .foot{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot h3{
+    font-size: .9rem;
+    margin-bottom: 20px;
+}
+
+footer .foot p{
+    font-size: .8rem;
+}
