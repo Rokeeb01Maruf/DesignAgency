@@ -27,6 +27,8 @@
 
 body {
     font: 1rem montserrat;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
