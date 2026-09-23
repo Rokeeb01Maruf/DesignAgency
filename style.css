@@ -663,10 +663,23 @@ footer .foot p{
         font-size: 2rem;
     }
     main section:nth-child(3).digital h4, section.footer input, {
-        max-width: 300px;
+        max-width: 100%;
     }
     main section:nth-child(3).digital h4, main section:nth-child(2).we-do div:nth-child(1) h4{
         font-size: 1.2rem;
+        width: fit-content;
+    }
+
+    main section.section div:last-child img, section.footer input, section.footer label{
+        max-width: 100%;
+    }
+
+    section.footer label{
+        padding-inline: 20px;
+    }
+
+    section.footer button{
+        right: 24px;
     }
     
 }
