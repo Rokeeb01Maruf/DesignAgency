@@ -655,3 +655,9 @@ footer .foot p{
         padding-top: 20px;
     }
 }
+
+@media (max-width: 510px) {
+    div.first-hero h2{
+        font-size: 2rem;
+    }
+}
