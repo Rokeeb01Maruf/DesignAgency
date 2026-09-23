@@ -662,4 +662,11 @@ footer .foot p{
     div.first-hero h2{
         font-size: 2rem;
     }
+    main section:nth-child(3).digital h4, section.footer input, {
+        max-width: 300px;
+    }
+    main section:nth-child(3).digital h4, main section:nth-child(2).we-do div:nth-child(1) h4{
+        font-size: 1.2rem;
+    }
+    
 }
